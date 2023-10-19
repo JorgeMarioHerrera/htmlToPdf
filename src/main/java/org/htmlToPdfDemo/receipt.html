@@ -1,0 +1,347 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@@600&family=Nunito+Sans:wght@@400;700&display=swap"
+          rel="stylesheet"/>
+    <style type="text/css">
+
+        .inner-container,
+        .footer-media-icons {
+            width: 375px;
+        }
+
+        .inner-container {
+            font-family: 'Nunito Sans', 'Trebuchet MS', sans-serif;
+            color: rgb(49, 53, 65);
+            margin: 50px auto;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .screen-background {
+            background-color: #ebedf3;
+        }
+
+        .receipt-header,
+        #layout-email-header,
+        #icon-class,
+        .icon-center,
+        .footer-disclaimer,
+        .footer-media-icons,
+        .disclaimer-text,
+        .receipt-text,
+        .date-style,
+        .total {
+            text-align: center;
+        }
+
+        .inner-container,
+        .footer-media-icons {
+            box-shadow: 1px 5px 3px 2px rgb(53 64 82 / 10%), 2px 3px 2px 2px #dee2e6;
+        }
+
+        .receipt-header {
+            background-color: rgb(59, 74, 135);
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            height: 212px !important;
+            margin-bottom: 50px;
+        }
+
+
+        #layout-email-header,
+        #icon-class {
+            background-repeat: no-repeat;
+        }
+
+
+        #layout-email-header {
+            width: 180px;
+            margin: 35px 0 15px 0;
+            padding: 0 0 0 0 !important;
+        }
+
+        #icon-class {
+            width: 68px;
+            padding-top: 10px;
+        }
+
+
+        .strong-total,
+        .receipt-text {
+            font-family: 'Montserrat', 'Verdana', sans-serif;
+        }
+
+        .strong-total {
+            font-weight: 600;
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        hr {
+            height: 1px;
+            background-color: silver;
+            border: none;
+        }
+
+        .body-separators {
+            margin-top: 20px;
+            text-align: left;
+            margin-left: 0;
+        }
+
+        .strong-separator {
+            height: 4px;
+            background-color: silver;
+            border: none;
+        }
+
+        .products-description-text {
+            margin: 0 5px 0 5px;
+        }
+
+        .table_list {
+            padding-left: 0;
+            padding-inline-start: 0;
+            list-style: none none;
+            margin: 1px 0 10px 0;
+        }
+
+        .table_list li {
+            padding-left: 0;
+            padding-inline-start: 0;
+            list-style: none none;
+        }
+
+        .footer-disclaimer {
+            margin-top: 25px;
+            font-size: 14px;
+        }
+
+        .disclaimer-text {
+            margin: 25px 15px 20px 15px;
+            font-size: 12px;
+        }
+
+        .disclaimer-text,
+        .footer-disclaimer,
+        .subtotal-section {
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 1.5;
+        }
+
+        .footer-media-icons {
+            padding: 30px 0 30px 0;
+            background-color: rgb(235, 237, 243);
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .layout-media-icons {
+            width: 19px;
+            margin: 0 0 0 5px;
+        }
+
+        .layout-media-icons img {
+            display: inline;
+        }
+
+        .layout-media-icons a {
+            text-decoration: none;
+        }
+
+        .receipt-text {
+            font-weight: 600;
+            font-size: 20px;
+            color: white;
+        }
+
+        .table-width {
+            width: 100%;
+        }
+
+        .date-style {
+            line-height: 1.5;
+            color: white;
+            font-size: 14px;
+            margin-bottom: 50px;
+            padding-bottom: 8px;
+        }
+
+        .total {
+            margin: 25px 0 15px 0;
+            padding-top: 15px;
+        }
+
+        .product-item,
+        .subtotal-section {
+            font-weight: 600;
+            text-align: left;
+            padding: 10px 0 0 10px;
+        }
+
+        .product-item-amount {
+            text-align: right;
+            padding: 10px 10px 0 10px;
+        }
+
+        .total-div {
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .summary-text {
+            font-weight: 14;
+            padding-top: 10px;
+            font-family: 'Nunito Sans', 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body class="screen-background">
+<div class="inner-container">
+    <div class="receipt-header">
+        <table class="table-width">
+            <tr>
+                <td>
+                    <img
+                            id="layout-email-header"
+                            src="https://cdn.sharetown.io/images/receipt/white-logo.png"
+                            class="img-fluid"
+                            alt="ShareTown Logo"
+                    />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="receipt-text">Receipt</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="td-padding">
+                    <span class="date-style">24/03/2023</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="icon-center">
+                        <img
+                                id="icon-class"
+                                src="https://cdn.sharetown.io/images/receipt/receipt-icon.png"
+                                class="img-fluid"
+                                alt="receipt icon"
+                        />
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <div class="icon-class">
+            <div class="total">Total</div>
+            <div class="strong-total">$1000</div>
+            <hr class="body-separators"/>
+        </div>
+        <div>
+            <ul class="table_list">
+                <li>
+                    <table class="table-width">
+                        <tr>
+                            <td class="product-item">Puffy, table desk</td>
+                            <td class="product-item-amount">$1000</td>
+                        </tr>
+                    </table>
+                </li>
+                <hr class="body-separators"/>
+            </ul>
+            <ul class="table_list subtotal-section">
+                <li>
+                    <table class="table-width">
+                        <tr>
+                            <td class="summary-text">White Glove Setup</td>
+                            <td class="product-item-amount">$200</td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <div class="subtotal-section">
+                <table class="table-width">
+                    <tr>
+                        <td class="summary-text">Subtotal</td>
+                        <td class="product-item-amount">
+                            $800
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="total-div">
+                <table class="table-width">
+                    <tr>
+                        <td class="product-item">Total</td>
+                        <td class="product-item-amount">$1000</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr class="strong-separator"/>
+    </div>
+    <footer>
+        <div class="footer-disclaimer">
+            <span>Transaction ID: juy799hnmk</span>
+        </div>
+        <div class="footer-disclaimer">
+            <span>Payment Type: Cacs</span>
+        </div>
+
+        <div class="disclaimer-text">
+                    <span>
+                        Sold by Sharetown, Inc. (Sharetown.com) Product sold as is, no
+                        warranty, returns or exchanges. Where applicable, price includes all
+                        state and local taxes.
+                    </span>
+        </div>
+        <div class="footer-media-icons">
+            <table class="table-width">
+                <tr>
+                    <td class="layout-media">
+                                <span class="layout-media-icons">
+                                    <a href="https://www.facebook.com/ShareTownInc/">
+                                        <img
+                                                class="layout-media-icons"
+                                                src="https://cdn.sharetown.io/images/receipt/denim-facebook.png"
+                                                alt="Sharetown Facebook Link"
+                                        />
+                                    </a>
+                                </span>
+                        <span class="layout-media-icons">
+                                    <a href="https://www.instagram.com/sharetown/">
+                                        <img
+                                                class="layout-media-icons"
+                                                src="https://cdn.sharetown.io/images/receipt/denim-Instagram.png"
+                                                alt="Sharetown Instagram Link"
+                                        />
+                                    </a>
+                                </span>
+                        <span class="layout-media-icons">
+                                    <a href="https://www.linkedin.com/company/sharetown-inc/">
+                                        <img
+                                                class="layout-media-icons"
+                                                src="https://cdn.sharetown.io/images/receipt/denim-linkedin.png"
+                                                alt="Sharetown LinkedIn Link"
+                                        />
+                                    </a>
+                                </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
